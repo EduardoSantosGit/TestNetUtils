@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNetUtils", "TestNetUtils\TestNetUtils.csproj", "{6665A122-96AC-4ED7-BF0F-9B282C835472}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNetUtils", "TestNetUtils\TestNetUtils.csproj", "{6665A122-96AC-4ED7-BF0F-9B282C835472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNetUtils.Integration.Tests", "TestNetUtils.Tests\TestNetUtils.Integration.Tests.csproj", "{8FB322EA-CE5B-495F-B03A-2768A0B2B1D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6665A122-96AC-4ED7-BF0F-9B282C835472}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6665A122-96AC-4ED7-BF0F-9B282C835472}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6665A122-96AC-4ED7-BF0F-9B282C835472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FB322EA-CE5B-495F-B03A-2768A0B2B1D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FB322EA-CE5B-495F-B03A-2768A0B2B1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FB322EA-CE5B-495F-B03A-2768A0B2B1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FB322EA-CE5B-495F-B03A-2768A0B2B1D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
