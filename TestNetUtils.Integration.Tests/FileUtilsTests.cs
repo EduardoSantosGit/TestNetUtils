@@ -31,5 +31,16 @@ namespace TestNetUtils.Integration.Tests
             Assert.NotNull(file);
         }
 
+        [Fact(DisplayName = "OpenText Path file not exists Return null")]
+        public void OpenText_WhenPathFile_ReturnsStringFile()
+        {
+            //arrange
+            var name = @"../Files/teste1.txt";
+
+            var file = FileUtils.OpenText(name);
+
+            Assert.Null(file);
+        }
+
     }
 }
