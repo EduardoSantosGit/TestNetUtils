@@ -20,5 +20,16 @@ namespace TestNetUtils.Integration.Tests
             Assert.NotNull(file);
         }
 
+        [Fact(DisplayName = "OpenText Path file Return String file")]
+        public void OpenText_WhenPathFile_ReturnsStringFile()
+        {
+            //arrange
+            var name = @"../Files/teste.txt";
+
+            var file = FileUtils.OpenText(name);
+
+            Assert.NotNull(file);
+        }
+
     }
 }
