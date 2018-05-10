@@ -53,5 +53,16 @@ namespace TestNetUtils.Integration.Tests
             Assert.Null(file);
         }
 
+        [Fact(DisplayName = "OpenText name file exist Return file string correct")]
+        public void OpenText_WhenNameFile_ReturnsStringFileCorrect()
+        {
+            //arrange
+            var name = "teste14.txt";
+
+            var file = FileUtils.OpenText(name);
+
+            Assert.Equal("Test File exists name correct", file.ReadToEnd());
+        }
+
     }
 }
