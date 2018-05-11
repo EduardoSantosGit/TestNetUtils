@@ -8,7 +8,6 @@ namespace TestNetUtils.Integration.Tests
     [Trait("Integration Tests", "FileUtilsTests")]
     public class FileUtilsTests
     {
-
         [Fact(DisplayName = "OpenText Name File Return String file")]
         public void OpenText_WhenNameFile_ReturnsStringFile()
         {
@@ -57,7 +56,7 @@ namespace TestNetUtils.Integration.Tests
         public void OpenText_WhenNameFile_ReturnsStringFileCorrect()
         {
             //arrange
-            var name = "teste14.txt";
+            var name = "teste.txt";
 
             var file = FileUtils.OpenText(name);
 
