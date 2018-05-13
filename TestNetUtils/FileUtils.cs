@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -30,7 +31,6 @@ namespace TestNetUtils
 
         private static string FindFileAllDirectory(string name)
         {
-
             var location = typeof(FileUtils).GetTypeInfo().Assembly.Location;
             var dirPath = Path.GetDirectoryName(location);
 
@@ -48,6 +48,38 @@ namespace TestNetUtils
 
             return null;
         }
+        
+        private static string FindFileProject(string name)
+        {
+            var project = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+
+
+
+            return null;
+        }
+
+        private static List<String> DirSearch(string sDir)
+        {
+            List<String> files = new List<String>();
+            try
+            {
+                foreach (string f in Directory.GetFiles(sDir))
+                {
+                    files.Add(f);
+                }
+                foreach (string d in Directory.GetDirectories(sDir))
+                {
+                    files.AddRange(DirSearch(d));
+                }
+            }
+            catch (System.Exception excpt)
+            {
+                MessageBox.Show(excpt.Message);
+            }
+
+            return files;
+        }
+
 
     }
 }
