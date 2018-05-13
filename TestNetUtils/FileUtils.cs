@@ -21,7 +21,7 @@ namespace TestNetUtils
             var file = FindFileAllDirectory(source);
 
             return null;
-            
+
         }
 
         private static bool IsPath(string directory)
@@ -48,35 +48,29 @@ namespace TestNetUtils
 
             return null;
         }
-        
+
         private static string FindFileProject(string name)
         {
             var project = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName;
 
+            var files = DirSearch(project);
 
+            var file = files.Where(x => x.Contains(name)).First();
 
-            return null;
+            return file;
         }
 
         private static List<String> DirSearch(string sDir)
         {
             List<String> files = new List<String>();
-            try
+            foreach (string f in Directory.GetFiles(sDir))
             {
-                foreach (string f in Directory.GetFiles(sDir))
-                {
-                    files.Add(f);
-                }
-                foreach (string d in Directory.GetDirectories(sDir))
-                {
-                    files.AddRange(DirSearch(d));
-                }
+                files.Add(f);
             }
-            catch (System.Exception excpt)
+            foreach (string d in Directory.GetDirectories(sDir))
             {
-                MessageBox.Show(excpt.Message);
+                files.AddRange(DirSearch(d));
             }
-
             return files;
         }
 
