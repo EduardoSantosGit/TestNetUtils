@@ -1,0 +1,10 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace TestNetUtils.Integration.Tests.Files.folderTest.subfolder
+{
+    class subitem
+    {
+    }
+}

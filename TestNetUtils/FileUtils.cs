@@ -51,7 +51,7 @@ namespace TestNetUtils
 
         private static string FindFileProject(string name)
         {
-            var project = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+            var project = Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName;
 
             var files = DirSearch(project);
 
