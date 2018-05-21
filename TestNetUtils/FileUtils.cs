@@ -18,7 +18,10 @@ namespace TestNetUtils
             if (IsPath(source))
                 return new StreamReader(source);
 
-            var file = FindFileAllDirectory(source);
+            var file = FindFileProject(source);
+
+            if(file != null)
+               return new StreamReader(file);
 
             return null;
 
@@ -28,27 +31,7 @@ namespace TestNetUtils
         {
             return (directory.Contains("\\") || directory.Contains(":"));
         }
-
-        private static string FindFileAllDirectory(string name)
-        {
-            var location = typeof(FileUtils).GetTypeInfo().Assembly.Location;
-            var dirPath = Path.GetDirectoryName(location);
-
-            if (File.Exists(Path.Combine(dirPath, name)) == false)
-            {
-                if (File.Exists(Path.Combine(dirPath, $"..\\{name}")))
-                {
-                    name = $"..\\{name}";
-                }
-                else if (File.Exists(Path.Combine(dirPath, $"{(name.StartsWith("..\\") ? name.Remove(0, 3) : name)}")))
-                {
-                    name = name.Remove(0, 3);
-                }
-            }
-
-            return null;
-        }
-
+        
         private static string FindFileProject(string name)
         {
             var project = Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName;
