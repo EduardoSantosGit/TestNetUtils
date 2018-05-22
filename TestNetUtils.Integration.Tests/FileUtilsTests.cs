@@ -74,5 +74,16 @@ namespace TestNetUtils.Integration.Tests
             Assert.Equal("Test File exists name correct", file.ReadToEnd());
         }
 
+        [Fact(DisplayName = "OpenText name file not exist subnivel directory Return file string incorrect")]
+        public void OpenText_WhenNameFileNotSubItemDirectory_ReturnsStringFileInCorrect()
+        {
+            //arrange
+            var name = "teste.txt";
+
+            var file = FileUtils.OpenText(name);
+
+            Assert.Null(file);
+        }
+
     }
 }
