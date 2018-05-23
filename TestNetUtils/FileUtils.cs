@@ -9,24 +9,17 @@ namespace TestNetUtils
 {
     public static class FileUtils
     {
-
         public static StreamReader OpenText(string source)
         {
             if (source == null)
                 throw new ArgumentNullException("source");
 
-            var file = default(string);
-
-            if (IsPath(source))
-                file = source;
-
-            file = FindFileProject(source);
+            var file = (IsPath(source) == true) ? source : FindFileProject(source);
 
             if(file != null)
                return new StreamReader(file);
 
             return null;
-
         }
 
         private static bool IsPath(string directory) => directory.Contains("\\") || directory.Contains(":");
@@ -44,12 +37,12 @@ namespace TestNetUtils
 
         private static List<String> DirSearch(string sDir)
         {
-            List<String> files = new List<String>();
-            foreach (string f in Directory.GetFiles(sDir))
+            var files = new List<String>();
+            foreach (var f in Directory.GetFiles(sDir))
             {
                 files.Add(f);
             }
-            foreach (string d in Directory.GetDirectories(sDir))
+            foreach (var d in Directory.GetDirectories(sDir))
             {
                 files.AddRange(DirSearch(d));
             }
