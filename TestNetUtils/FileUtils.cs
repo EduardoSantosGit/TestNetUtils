@@ -15,10 +15,12 @@ namespace TestNetUtils
             if (source == null)
                 throw new ArgumentNullException("source");
 
-            if (IsPath(source))
-                return new StreamReader(source);
+            var file = default(string);
 
-            var file = FindFileProject(source);
+            if (IsPath(source))
+                file = source;
+
+            file = FindFileProject(source);
 
             if(file != null)
                return new StreamReader(file);
@@ -27,10 +29,7 @@ namespace TestNetUtils
 
         }
 
-        private static bool IsPath(string directory)
-        {
-            return (directory.Contains("\\") || directory.Contains(":"));
-        }
+        private static bool IsPath(string directory) => directory.Contains("\\") || directory.Contains(":");
         
         private static string FindFileProject(string name)
         {
