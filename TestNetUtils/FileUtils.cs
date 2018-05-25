@@ -30,9 +30,7 @@ namespace TestNetUtils
 
             var files = DirSearch(project);
 
-            var file = files.Where(x => x.Contains(name)).First();
-
-            return file;
+            return files.Where(x => x.Contains(name)).First();
         }
 
         private static List<String> DirSearch(string sDir)
