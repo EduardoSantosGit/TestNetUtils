@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace TestNetUtils
 {
 
@@ -9,16 +11,23 @@ namespace TestNetUtils
         }
 
         public static void RemoveDirectory(string name){
-            return null;
         }
 
         public static void ClearDirectory(string name){
-
         }
 
         public static string CreateSubDirectory(string parentName, string childName){
             return null;
         }
+
+        public static string UpdateDirectory(string name, string newName){
+            return null;
+        }
+
+        public static IEnumerable<string> AllItemsDirectory(string name){
+            return null;
+        }
+
 
     }
 
