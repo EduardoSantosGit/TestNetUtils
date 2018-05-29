@@ -30,6 +30,10 @@ namespace TestNetUtils
             return null;
         }
 
+        private static string DirectoryBrowser(string name){
+            return null;
+        }
+        
         private static bool IsPath(string directory) => directory.Contains("\\") || directory.Contains(":");
         
         private static string FindFileProject(string name)
