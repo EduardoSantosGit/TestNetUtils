@@ -28,6 +28,14 @@ namespace TestNetUtils
             return null;
         }
 
+        public static string MoveDirectory(string source, string destiny){
+            return null;
+        }
+
+        public static IEnumerable<string> ListAllDirectory(string name){
+            return null;
+        }
+
 
     }
 
