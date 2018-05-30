@@ -22,6 +22,14 @@ namespace TestNetUtils
             return null;
         }
 
+        public static string PathFile(string name){
+            return null;
+        }
+
+        public static string OpenStringText(string source){
+            return null;
+        }
+
         private static bool IsPath(string directory) => directory.Contains("\\") || directory.Contains(":");
         
         private static string FindFileProject(string name)
