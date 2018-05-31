@@ -36,6 +36,10 @@ namespace TestNetUtils
             return null;
         }
 
+        public static bool DirectoryExists(string name){
+            return false;
+        }
+
 
     }
 

@@ -33,6 +33,10 @@ namespace TestNetUtils
         private static string DirectoryBrowser(string name){
             return null;
         }
+
+        public static bool FileExists(string name){
+            return false;
+        }
         
         private static bool IsPath(string directory) => directory.Contains("\\") || directory.Contains(":");
         
