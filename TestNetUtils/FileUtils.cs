@@ -49,9 +49,9 @@ namespace TestNetUtils
             return files.Where(x => x.Contains(name)).First();
         }
 
-        private static List<String> DirSearch(string sDir)
+        private static List<string> DirSearch(string sDir)
         {
-            var files = new List<String>();
+            var files = new List<string>();
             foreach (var f in Directory.GetFiles(sDir))
             {
                 files.Add(f);
