@@ -40,6 +40,9 @@ namespace TestNetUtils
             return false;
         }
 
+        public static int CountDirectory(){
+            return 0;
+        }
 
     }
 

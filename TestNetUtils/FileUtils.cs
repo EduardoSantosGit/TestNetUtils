@@ -37,6 +37,10 @@ namespace TestNetUtils
         public static bool FileExists(string name){
             return false;
         }
+
+        public static int CountFiles(){
+            return 0;
+        }
         
         private static bool IsPath(string directory) => directory.Contains("\\") || directory.Contains(":");
         
