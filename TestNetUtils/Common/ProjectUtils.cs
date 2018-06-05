@@ -16,6 +16,10 @@ namespace TestNetUtils
             return null;
         }
 
+        public static IEnumerable<string> ListAllFiles()
+        {
+            return null;
+        }
     }
 
 }
