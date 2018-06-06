@@ -20,6 +20,17 @@ namespace TestNetUtils
         {
             return null;
         }
+
+        public static string GetNameProject()
+        {
+            return null;
+        }
+
+        public static string GetDependenciesProject()
+        {
+            return null;
+        }
+
     }
 
 }
