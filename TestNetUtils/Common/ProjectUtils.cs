@@ -26,7 +26,12 @@ namespace TestNetUtils
             return null;
         }
 
-        public static string GetDependenciesProject()
+        public static IEnumerable<string> GetDependenciesProject()
+        {
+            return null;
+        }
+
+        public static IEnumerable<string> GetVerionsProject()
         {
             return null;
         }
