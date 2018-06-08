@@ -36,6 +36,15 @@ namespace TestNetUtils
             return null;
         }
 
+        public static string ProjectSize()
+        {
+            return null;
+        }
+
+        public static string TypeProject()
+        {
+            return null;
+        }
     }
 
 }
