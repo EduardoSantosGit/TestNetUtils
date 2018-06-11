@@ -45,6 +45,16 @@ namespace TestNetUtils
         {
             return null;
         }
+
+        public static string GetAssemblyProject()
+        {
+            return null;
+        }
+
+        public static string GetPathDllProject()
+        {
+            return null;
+        }
     }
 
 }
