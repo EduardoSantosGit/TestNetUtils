@@ -10,11 +10,15 @@ namespace TestNetUtils.Integration.Tests
     {
 
         [Fact(DisplayName = "Send Name directory Returns Path Directory")]
-        public void OpenText_WhenNameFile_ReturnsStringFile()
+        public void CreateDirectory_WhenNameFile_ReturnsPathDirectory()
         {
-           
+            
         }
 
-
-    }
+        [Fact(DisplayName = "Send Name directory Returns Path Directory")]
+        public void RemoveDirectory_SendNameDirectory_DirectoryRemovedOK()
+        {
+            
+        }
+    }    
 }
