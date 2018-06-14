@@ -15,10 +15,23 @@ namespace TestNetUtils.Integration.Tests
             
         }
 
-        [Fact(DisplayName = "Send Name directory Returns Path Directory")]
-        public void RemoveDirectory_SendNameDirectory_DirectoryRemovedOK()
+        [Fact(DisplayName = "Remove directory with name ok")]
+        public void RemoveDirectory_SendNameDirectory_DirectoryRemoved()
         {
             
         }
+
+        [Fact(DisplayName = "Clear Directory All Files ok")]
+        public void ClearDirectory_SendNameDirectory_ClearAllItemsDirectory()
+        {
+            
+        }
+
+         [Fact(DisplayName = "Create SubDirectory with name and subname return path ok")]
+        public void CreateSubDirectory_SendNameDirectories_ReturnsPathComplete()
+        {
+            
+        }
+
     }    
 }
