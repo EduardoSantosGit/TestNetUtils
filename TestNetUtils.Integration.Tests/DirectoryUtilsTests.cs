@@ -38,6 +38,14 @@ namespace TestNetUtils.Integration.Tests
             
         }
 
+        [Fact(DisplayName = "MoveDirectory with name and new name path Return new Path")]
+        public void MoveDirectory_SendNameAndNewNamePath_ReturnsNewPathComplete()
+        {
+            
+        }
+
+        
+
         
 
     }    
