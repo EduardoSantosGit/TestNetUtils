@@ -44,4 +44,11 @@ namespace TestNetUtils.Integration.Tests
         {
             
         } 
+
+        [Fact(DisplayName = "ListAllDirectory with name Returns All SubDirectories")]
+        public void ListAllDirectory_SendNameDirectory_ReturnsAllDirectories()
+        {
+            
+        } 
+    }    
 }
