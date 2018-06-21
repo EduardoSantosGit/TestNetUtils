@@ -50,5 +50,11 @@ namespace TestNetUtils.Integration.Tests
         {
             
         } 
+
+        [Fact(DisplayName = "DirectoryExists with name Returns Bool exists true")]
+        public void DirectoryExists_SendNameDirectory_ReturnsExistsTrue()
+        {
+            
+        } 
     }    
 }
