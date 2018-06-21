@@ -85,5 +85,9 @@ namespace TestNetUtils.Integration.Tests
             Assert.Null(file);
         }
 
+        [Fact(DisplayName = "FileExists name file Returns bool exists true")]
+        public void FileExists_WhenNameFileExists_ReturnsBoolTrue()
+        {
+        }
     }
 }
