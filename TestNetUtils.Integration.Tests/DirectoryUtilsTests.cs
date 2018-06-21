@@ -32,21 +32,23 @@ namespace TestNetUtils.Integration.Tests
         {
             
         }
-        [Fact(DisplayName = "UpdateDirectory with name and new name Retusn new Path")]
-        public void UpdateDirectory_SendNameAndNewName_ReturnsNewPathComplete()
-        {
-            
-        }
 
-        [Fact(DisplayName = "MoveDirectory with name and new name path Return new Path")]
+         [Fact(DisplayName = "MoveDirectory with name and new name path Return new Path")]
         public void MoveDirectory_SendNameAndNewNamePath_ReturnsNewPathComplete()
         {
             
         }
 
-        
+        [Fact(DisplayName = "AllItemsDirectory with name Returns All Items Directory")]
+        public void AllItemsDirectory_SendNameDirectory_ReturnsAllItemsDirectory()
+        {
+            
+        } 
 
-        
-
+        [Fact(DisplayName = "ListAllDirectory with name Returns All SubDirectories")]
+        public void ListAllDirectory_SendNameDirectory_ReturnsAllDirectories()
+        {
+            
+        } 
     }    
 }
