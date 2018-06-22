@@ -56,5 +56,11 @@ namespace TestNetUtils.Integration.Tests
         {
             
         } 
+
+        [Fact(DisplayName = "CountDirectory with name Returns int count directories")]
+        public void CountDirectory_SendNameDirectory_ReturnsCountSubDirectories()
+        {
+            
+        } 
     }    
 }
